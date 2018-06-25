@@ -86,7 +86,7 @@ $logo = @"
 $label = @"          
                       ICMP Data Exfiltrater
   Data used with this script is to be used only for testing security controls
-                 Resppnsible use only is spermited
+                  Responsible use only is spermited
 "@
 
 
