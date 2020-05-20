@@ -17,7 +17,7 @@ On the receiving end run a apcket capture program such as tcpdump or tshark to c
 ## Recover exfiltrated data
 You can use Tshark to extract the paylod from the icmp data field. Tshark is installed on Windows when Wireshark program is installed. Tshark is installed seperate from the Wireshark program. On Linux simply use your systems prefered package manger to install Tshark.  
 
-Replace <b>icmp.pcap</b> with your captured icmp data from the receving side <b>ip.src==</b> with your sorce sending IP address  
+Replace <b>icmp.pcap</b> with your captured icmp data from the receving side and <b>ip.src==</b> with your sorce sending IP address  
 
 <b>Linux:</b>  
 <code>tshark -r icmp.pcap -Y ip.src==8.8.8.8 -T fields -e data | xxd -r -p > data2</code>  
