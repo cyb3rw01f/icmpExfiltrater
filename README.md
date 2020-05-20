@@ -2,7 +2,7 @@
 This file is a proof of concept and should be used for testing purposes only.   
 Malicious use is prohibitted.    
 
-This script canm be used to assist testing a security controls ability to detect/alert based on data exfiltration via the ICMP protocol.      
+This script can be used to assist testing a security controls ability to detect/alert based on data exfiltration via the ICMP protocol.      
 
 # Notes
 Data exfiltraion via this method is <b>very slow</b> and noisy, so it is highly suggested that only small files are used during testing.  
