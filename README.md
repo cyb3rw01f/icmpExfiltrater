@@ -15,5 +15,6 @@ On the sending side
 On the receiving end run a tcpdump/tshark session to capture the incoming ICMP data. Once the transfer is complete you can use the below tshark command to extract the data back to its normal form.  
 
 ## Recover exfiltrated data
-Using Tshark to extract the paylod from the icmp data field. Replace ip.src== with your sorce sending IP addr
-tshark -r icmp.pcap -Y ip.src==8.8.8.8 -T fields -e data | xxd -r -p > data2  
+Using Tshark to extract the paylod from the icmp data field. Replace <b>ip.src==</b> with your sorce sending IP address..
+
+<code>tshark -r icmp.pcap -Y ip.src==8.8.8.8 -T fields -e data | xxd -r -p > data2</code>  
