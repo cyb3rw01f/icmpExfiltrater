@@ -48,13 +48,12 @@ $label = @"
             Script is to be used for testing purposes
 "@
 
-
 Function Get-File
 {
 Add-Type -AssemblyName System.Windows.Forms
 $fileBrowser = New-Object System.Windows.Forms.OpenFileDialog -Property @{
     Multiselect = $false # When set to $true multiple files can be chosen
-}
+    }
  
 [void]$fileBrowser.ShowDialog()
  
@@ -63,22 +62,18 @@ $script:file = $fileBrowser.SafeFileName;
 $script:data = (Get-Content $fileName -Raw) 
 
 If($FileBrowser.FileNames -like "*\*") {
+      # Select your file 
+      $fileBrowser.FileName #Lists selected files (optional)
+      }
  
-        # Do something 
-        $fileBrowser.FileName #Lists selected files (optional)
-        
- 
-}
- 
-else {
+ else {
     Write-Host -f Green  "File select cancelled by user"
     Exit
-}
+      }
+ }
 
 #nl variable simply does a carrage return / new line
 $nl = [Environment]::NewLine
- 
-}
 Write-Host -f Magenta $logo
 Write-Host
 Write-Host -f Green $label
