@@ -1,11 +1,11 @@
 # icmpExfiltrater
-This is a Proof of Concept. This file is for testing purposes only. Malicious use of this script is prohibitted.  
+This file is a proof of concept and should be used for testing purposes only.   
+Malicious use is prohibitted.    
 
- This script canm be used to assist testing a security controls ability to detect/alert based on data exfiltration via the ICMP protocol.  
+This script canm be used to assist testing a security controls ability to detect/alert based on data exfiltration via the ICMP protocol.      
 
 # Notes
-This is very slow and noisy so it is highly suggested that only small files are used for testing.
-
+Data exfiltraion via this method is <b>very slow</b> and noisy, so it is highly suggested that only small files are used during testing.  
 # How to use
 
 ## Sender
