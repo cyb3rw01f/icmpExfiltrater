@@ -78,7 +78,7 @@ Write-Host -f Magenta $logo
 Write-Host
 Write-Host -f Green $label
 $nl
-$destination = read-host "PING Destination Doamin or IP address"
+$destination = read-host "PING destination Domain or IP address"
 Get-File
 $bytes = [System.Text.Encoding]::ASCII.GetBytes($data)
 $PingObj = New-Object System.Net.NetworkInformation.ping
