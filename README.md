@@ -13,6 +13,7 @@ On the sending side, when you run the script, you will be prompted for a destina
 
 ![image](https://github.com/user-attachments/assets/b965ec32-de68-4a64-a4e6-934a07008675)
 
+![image](https://github.com/user-attachments/assets/df8efa57-3cdf-4aca-9d9d-bf4b1f246c8a)
 
 ## Receiver
 On the receiving end, run a apcket capture program such as tcpdump or tshark to capture the incoming ICMP data. Once the transfer is complete you can use a program like tshark to extract the data back to its normal form. See the data recovery information below  
