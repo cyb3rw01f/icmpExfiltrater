@@ -11,6 +11,9 @@ Data exfiltraion via this method is <b>very slow</b> and noisy, so it is highly 
 ## Sender
 On the sending side, when you run the script, you will be prompted for a destination IP adress. After entering a destination IP a file browser window will appear allowing you to select a source file.
 
+![image](https://github.com/user-attachments/assets/b965ec32-de68-4a64-a4e6-934a07008675)
+
+
 ## Receiver
 On the receiving end, run a apcket capture program such as tcpdump or tshark to capture the incoming ICMP data. Once the transfer is complete you can use a program like tshark to extract the data back to its normal form. See the data recovery information below  
 
